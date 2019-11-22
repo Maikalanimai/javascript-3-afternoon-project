@@ -145,6 +145,8 @@ let bobsTotal = purchases.reduce(function(acc, element, index, array){
   console.log(acc)
   if(element.owner === "Bob"){    
     return (acc += element.price)
+  } else {
+    return (acc += 0)
   } 
 }, 0)
 
